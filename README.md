@@ -27,7 +27,7 @@ Run the command `python measure_energy.py`. You can chose the custom optimizers 
 The Training loop ends when the Validation accuracy of 80% is reached and returns back the Average and Peak Temperature of the GPU along with the Average and Peak Power Consumption for the training job. Additonally plots charting the power and temperature measurements are also created.
 
 <br>
-To replicate the results of throttling the data, use the command `python measure_energy.py` and replace `POWER_LIMIT` with the desired value in Watts. After this command is run successfully run the main python file with `python measure_energy.py`.
+To replicate the results of throttling the data, use the command `sudo nvidia-smi -i 0 -pl POWER_LIMIT` and replace `POWER_LIMIT` with the desired value in Watts. After this command is run successfully run the main python file with `python measure_energy.py`.
 
 ## Results 
 Sample results of v100 on Resnet-50
